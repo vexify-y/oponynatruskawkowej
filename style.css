@@ -381,10 +381,23 @@ footer {
 .social-link {
   font-size: 1.5rem;
   color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-link:hover {
-  color: var(--primary);
+.social-link img {
+  height: 2.2rem; /* Significant increase to compensate for excessive whitespace in the original image file */
+  width: auto;
+  filter: grayscale(1) brightness(1.5);
+  opacity: 0.6;
+  transition: var(--transition);
+  display: block;
+}
+
+.social-link:hover img {
+  filter: grayscale(0) brightness(1);
+  opacity: 1;
 }
 
 /* Responsive */
