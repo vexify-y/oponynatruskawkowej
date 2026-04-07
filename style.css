@@ -1,16 +1,12 @@
-/*
- * Opony na Truskawkowej - Professional Design System
- * Modern Dark Theme with Racing Red Accents
- */
 
 :root {
   /* Colors */
   --bg-main: #0f1115;
   --bg-surface: #1a1d23;
   --bg-card: #252a33;
-  --primary: #ef4444; /* Racing Red */
+  --primary: #ef4444;
   --primary-glow: rgba(239, 68, 68, 0.4);
-  --secondary: #b91c1c; /* Darker Red */
+  --secondary: #b91c1c;
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-accent: #ef4444; 
@@ -310,6 +306,7 @@ nav {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  transform: scale(1.02);
 }
 
 .gallery-item:hover img {
@@ -387,7 +384,7 @@ footer {
 }
 
 .social-link img {
-  height: 2.2rem; /* Significant increase to compensate for excessive whitespace in the original image file */
+  height: 2.2rem;
   width: auto;
   filter: grayscale(1) brightness(1.5);
   opacity: 0.6;
